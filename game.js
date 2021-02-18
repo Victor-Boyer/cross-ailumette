@@ -13,7 +13,7 @@ let array = ["   |   ", "  |||  ", " ||||| ", "|||||||"];
 function plateau() {
   console.log("* * * * * *");
   for (let i = 0; i < 4; i++) {
-    console.log("* " + array[i] + " *");
+    console.log(i+1+" " + array[i] + " *");
   }
   console.log("* * * * * *");
 }
@@ -34,22 +34,6 @@ function step(line, match, array) {
   }
   array.splice(line - 1, 1, content);
 }
-
-
-/* console.log("Line ?");
-rl.on('line', (line) => {
-  console.log('Match : ');
-  let bool = false;
-  let matches;
-  while (!bool) {
-    rl.on('line', (match)=>{
-      matches = match;
-      bool=true;
-    })
-  }
-  step(line, matches, array)
-  plateau();
-}); */
 
 let ifLine = false;
 
