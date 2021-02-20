@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
+//import game_script from '../ailumette.js';
 
 export default class App extends Component {
   constructor(props) {
@@ -10,6 +11,10 @@ export default class App extends Component {
       ligne: "1",
       match: "1"
     };
+  }
+
+  componentDidMount () {
+    //const Game = new game_script();
   }
 
   onChange = (e) => {

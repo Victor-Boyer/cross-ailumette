@@ -15,7 +15,7 @@
     "wait-on": "^5.2.1",
     "web-vitals": "^1.1.0"
   },
-  "main": "ailumette.js",
+  "main": "gui.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
