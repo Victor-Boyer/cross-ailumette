@@ -12,7 +12,7 @@ const cmd = process.argv[2] || null;
 /* ------------------ Game Launcher ------------------*/
 if (cmd == "--gui") {
   console.log("Launching...");
-  console.log("Press CTRL + C to close the app");
+  console.log("Press CTRL + C to close the launcher");
   exec("npm run electron-react", (error, stdout, stderr) => {
     if (error) throw error;
     console.log(stdout);
