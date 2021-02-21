@@ -1,3 +1,9 @@
+# https://github.com/pu-erh/ailumette
+
+# Step
+The log mode is working.
+The GUI mode is launching when you put `--gui` option after `node ailumette` but the game is not working.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
