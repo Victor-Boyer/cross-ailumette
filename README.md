@@ -1,4 +1,4 @@
-# https://github.com/pu-erh/ailumette
+# [Origin of the project](https://github.com/pu-erh/ailumette)
 
 # Step
 The log mode is working.
