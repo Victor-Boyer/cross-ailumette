@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Component } from "react";
-//import game_script from '../ailumette.js';
+import React, { Component } from "react";
+const AIlumette = require("./body-game");
 
 export default class App extends Component {
   constructor(props) {
@@ -9,14 +8,13 @@ export default class App extends Component {
     this.state = {
       logs: [],
       ligne: "1",
-      match: "1"
+      match: "1",
     };
   }
 
   componentDidMount () {
-    //const Game = new game_script();
+    
   }
-
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -33,7 +31,8 @@ export default class App extends Component {
   };
 
   render() {
-    console.log(this.state.cmd);
+    console.log(AIlumette.constructor());
+    //const Game = new AIlumette();
     return (
       <section>
         <div className="App">
@@ -80,7 +79,6 @@ export default class App extends Component {
                 type="number"
                 min="1"
                 max="4"
-                value="1"
               />
             </div>
             <div>
@@ -92,7 +90,6 @@ export default class App extends Component {
                 type="number"
                 min="1"
                 max="7"
-                value="1"
               />
             </div>
             <div style={{ width: "100%" }}>
